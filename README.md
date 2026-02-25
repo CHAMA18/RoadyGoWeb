@@ -24,6 +24,5 @@ This repo includes a Render blueprint in `render.yaml` for a static web deploy.
 
 The build script installs Flutter only when it is not already available, then runs:
 
-1. `flutter config --enable-web`
-2. `flutter pub get`
-3. `flutter build web --release`
+1. `flutter pub get`
+2. `flutter build web --release`
