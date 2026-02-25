@@ -181,7 +181,7 @@ class _MobileTimeline extends StatelessWidget {
                 end: Alignment.bottomCenter,
                 colors: [
                   AppColors.primary,
-                  AppColors.primary.withValues(alpha: 0.1),
+                  AppColors.primary.withOpacity(0.1),
                 ],
               ),
               borderRadius: BorderRadius.circular(1),

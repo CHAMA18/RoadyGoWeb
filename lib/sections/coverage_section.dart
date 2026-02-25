@@ -114,7 +114,7 @@ class CoverageSection extends StatelessWidget {
                         child: Container(
                           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           decoration: BoxDecoration(
-                            color: Colors.black.withValues(alpha: 0.4),
+                            color: Colors.black.withOpacity(0.4),
                             borderRadius: BorderRadius.circular(12),
                             border: Border.all(color: AppColors.white10),
                           ),
@@ -158,7 +158,7 @@ class _GridPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-      ..color = Colors.white.withValues(alpha: 0.03)
+      ..color = Colors.white.withOpacity(0.03)
       ..strokeWidth = 1;
 
     const spacing = 40.0;
@@ -225,11 +225,11 @@ class _PulsingDotState extends State<_PulsingDot>
           width: 6,
           height: 6,
           decoration: BoxDecoration(
-            color: AppColors.primary.withValues(alpha: _animation.value),
+            color: AppColors.primary.withOpacity(_animation.value),
             shape: BoxShape.circle,
             boxShadow: [
               BoxShadow(
-                color: AppColors.primary.withValues(alpha: 0.5 * _animation.value),
+                color: AppColors.primary.withOpacity(0.5 * _animation.value),
                 blurRadius: 8,
                 spreadRadius: 2,
               ),

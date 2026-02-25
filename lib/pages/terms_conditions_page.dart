@@ -51,7 +51,7 @@ class _TermsHeader extends StatelessWidget {
     final headerContent = Container(
       padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
       decoration: BoxDecoration(
-        color: AppColors.backgroundDark.withValues(alpha: kIsWeb ? 0.9 : 0.8),
+        color: AppColors.backgroundDark.withOpacity(kIsWeb ? 0.9 : 0.8),
         border: const Border(
           bottom: BorderSide(color: AppColors.white05, width: 1),
         ),
@@ -283,7 +283,7 @@ class _TermsContent extends StatelessWidget {
                           fontWeight: FontWeight.w700,
                           fontStyle: FontStyle.italic,
                           decoration: TextDecoration.underline,
-                          decorationColor: AppColors.primary.withValues(alpha: 0.3),
+                          decorationColor: AppColors.primary.withOpacity(0.3),
                         ),
                       ),
                       const TextSpan(
@@ -342,9 +342,9 @@ class _VersionBadge extends StatelessWidget {
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
           decoration: BoxDecoration(
-            color: AppColors.primary.withValues(alpha: 0.1),
+            color: AppColors.primary.withOpacity(0.1),
             borderRadius: BorderRadius.circular(20),
-            border: Border.all(color: AppColors.primary.withValues(alpha: 0.2)),
+            border: Border.all(color: AppColors.primary.withOpacity(0.2)),
           ),
           child: Row(
             mainAxisSize: MainAxisSize.min,
@@ -357,7 +357,7 @@ class _VersionBadge extends StatelessWidget {
                   shape: BoxShape.circle,
                   boxShadow: [
                     BoxShadow(
-                      color: AppColors.primary.withValues(alpha: 0.5),
+                      color: AppColors.primary.withOpacity(0.5),
                       blurRadius: 6,
                       spreadRadius: 2,
                     ),
@@ -505,8 +505,8 @@ class _BottomActionBar extends StatelessWidget {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            AppColors.backgroundDark.withValues(alpha: 0),
-            AppColors.backgroundDark.withValues(alpha: 0.95),
+            AppColors.backgroundDark.withOpacity(0),
+            AppColors.backgroundDark.withOpacity(0.95),
             AppColors.backgroundDark,
           ],
           stops: const [0.0, 0.3, 1.0],
@@ -598,7 +598,7 @@ class _AcceptButtonState extends State<_AcceptButton> {
             borderRadius: BorderRadius.circular(16),
             boxShadow: [
               BoxShadow(
-                color: AppColors.primary.withValues(alpha: 0.3),
+                color: AppColors.primary.withOpacity(0.3),
                 blurRadius: 40,
                 offset: const Offset(0, 20),
               ),

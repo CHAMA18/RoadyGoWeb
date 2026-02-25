@@ -46,7 +46,7 @@ class HeroSection extends StatelessWidget {
           // Red overlay
           Positioned.fill(
             child: Container(
-              color: AppColors.primary.withValues(alpha: 0.08),
+              color: AppColors.primary.withOpacity(0.08),
             ),
           ),
           // Gradient overlay
@@ -58,9 +58,9 @@ class HeroSection extends StatelessWidget {
                   end: Alignment.bottomCenter,
                   stops: const [0.0, 0.4, 0.85, 1.0],
                   colors: [
-                    AppColors.backgroundDark.withValues(alpha: 0.1),
-                    AppColors.backgroundDark.withValues(alpha: 0.4),
-                    AppColors.backgroundDark.withValues(alpha: 0.95),
+                    AppColors.backgroundDark.withOpacity(0.1),
+                    AppColors.backgroundDark.withOpacity(0.4),
+                    AppColors.backgroundDark.withOpacity(0.95),
                     AppColors.backgroundDark,
                   ],
                 ),
@@ -111,7 +111,7 @@ class _DesktopHeroContent extends StatelessWidget {
                   height: 0.95,
                   shadows: [
                     Shadow(
-                      color: Colors.white.withValues(alpha: 0.3),
+                      color: Colors.white.withOpacity(0.3),
                       blurRadius: 20,
                     ),
                   ],
@@ -191,7 +191,7 @@ class _MobileHeroContent extends StatelessWidget {
             height: 0.95,
             shadows: [
               Shadow(
-                color: Colors.white.withValues(alpha: 0.3),
+                color: Colors.white.withOpacity(0.3),
                 blurRadius: 20,
               ),
             ],
@@ -320,7 +320,7 @@ class _PulsatingDotState extends State<_PulsatingDot>
                 height: 10,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: AppColors.primary.withValues(alpha: 0.75 * _animation.value),
+                  color: AppColors.primary.withOpacity(0.75 * _animation.value),
                 ),
               );
             },
@@ -398,7 +398,7 @@ class _GetHelpButtonState extends State<_GetHelpButton>
                             gradient: LinearGradient(
                               colors: [
                                 Colors.transparent,
-                                Colors.white.withValues(alpha: 0.2),
+                                Colors.white.withOpacity(0.2),
                                 Colors.transparent,
                               ],
                             ),

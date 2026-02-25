@@ -220,7 +220,7 @@ class FleetCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GlassPanel(
-      borderColor: isFeatured ? AppColors.primary.withValues(alpha: 0.3) : null,
+      borderColor: isFeatured ? AppColors.primary.withOpacity(0.3) : null,
       padding: const EdgeInsets.all(8),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -242,7 +242,7 @@ class FleetCard extends StatelessWidget {
                   child: Icon(
                     icon,
                     size: 72,
-                    color: Colors.white.withValues(alpha: 0.1),
+                    color: Colors.white.withOpacity(0.1),
                   ),
                 ),
                 // Badge
@@ -253,11 +253,11 @@ class FleetCard extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                     decoration: BoxDecoration(
                       color: isFeatured
-                          ? badgeColor.withValues(alpha: 0.2)
-                          : Colors.black.withValues(alpha: 0.6),
+                          ? badgeColor.withOpacity(0.2)
+                          : Colors.black.withOpacity(0.6),
                       borderRadius: BorderRadius.circular(20),
                       border: Border.all(
-                        color: badgeColor.withValues(alpha: isFeatured ? 0.3 : 0.2),
+                        color: badgeColor.withOpacity(isFeatured ? 0.3 : 0.2),
                       ),
                     ),
                     child: Text(

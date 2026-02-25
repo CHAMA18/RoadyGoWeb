@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: roadygo-web
+    runtime: static
+    buildCommand: ./scripts/render-build.sh
+    staticPublishPath: build/web

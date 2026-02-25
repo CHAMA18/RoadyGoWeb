@@ -31,7 +31,7 @@ class RoadyOSSection extends StatelessWidget {
                   width: 256,
                   height: 256,
                   decoration: BoxDecoration(
-                    color: AppColors.primary.withValues(alpha: 0.05),
+                    color: AppColors.primary.withOpacity(0.05),
                     borderRadius: BorderRadius.circular(128),
                   ),
                 ),
@@ -65,7 +65,7 @@ class RoadyOSSection extends StatelessWidget {
                       ),
                       Icon(
                         Icons.memory,
-                        color: AppColors.primary.withValues(alpha: 0.5),
+                        color: AppColors.primary.withOpacity(0.5),
                         size: isDesktop ? 56 : 40,
                       ),
                     ],
@@ -169,7 +169,7 @@ class _PredictiveDeploymentCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GlassPanel(
-      borderColor: AppColors.primary.withValues(alpha: 0.2),
+      borderColor: AppColors.primary.withOpacity(0.2),
       padding: const EdgeInsets.all(24),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -180,10 +180,10 @@ class _PredictiveDeploymentCard extends StatelessWidget {
                 width: 48,
                 height: 48,
                 decoration: BoxDecoration(
-                  color: AppColors.primary.withValues(alpha: 0.1),
+                  color: AppColors.primary.withOpacity(0.1),
                   borderRadius: BorderRadius.circular(16),
                   border: Border.all(
-                    color: AppColors.primary.withValues(alpha: 0.2),
+                    color: AppColors.primary.withOpacity(0.2),
                   ),
                 ),
                 child: const Icon(

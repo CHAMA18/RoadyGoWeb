@@ -47,7 +47,7 @@ class _DesktopLayout extends StatelessWidget {
           child: Icon(
             Icons.business_center,
             size: 200,
-            color: Colors.white.withValues(alpha: 0.03),
+            color: Colors.white.withOpacity(0.03),
           ),
         ),
         Row(
@@ -141,7 +141,7 @@ class _MobileLayout extends StatelessWidget {
           child: Icon(
             Icons.business_center,
             size: 120,
-            color: Colors.white.withValues(alpha: 0.03),
+            color: Colors.white.withOpacity(0.03),
           ),
         ),
         Column(

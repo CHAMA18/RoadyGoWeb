@@ -33,7 +33,7 @@ class AppColors {
   // Glow shadows
   static List<BoxShadow> get primaryGlow => [
     BoxShadow(
-      color: primary.withValues(alpha: 0.3),
+      color: primary.withOpacity(0.3),
       blurRadius: 20,
       spreadRadius: 0,
     ),
@@ -41,7 +41,7 @@ class AppColors {
   
   static List<BoxShadow> get accentGlow => [
     BoxShadow(
-      color: accent.withValues(alpha: 0.2),
+      color: accent.withOpacity(0.2),
       blurRadius: 15,
       spreadRadius: 0,
     ),
